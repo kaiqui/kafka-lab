@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: producer
-        image: seu-registro/kafka-producer:latest
+        image: kafka-producer:latest
         env:
         - name: KAFKA_BOOTSTRAP_SERVERS
           value: kafka:9092
