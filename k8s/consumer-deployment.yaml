@@ -16,6 +16,7 @@ spec:
       containers:
       - name: consumer
         image: kafka-consumer:latest
+        imagePullPolicy: Never
         env:
         - name: KAFKA_BOOTSTRAP_SERVERS
           value: kafka:9092

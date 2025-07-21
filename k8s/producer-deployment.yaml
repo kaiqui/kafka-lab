@@ -16,6 +16,7 @@ spec:
       containers:
       - name: producer
         image: kafka-producer:latest
+        imagePullPolicy: Never
         env:
         - name: KAFKA_BOOTSTRAP_SERVERS
           value: kafka:9092
