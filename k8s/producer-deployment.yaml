@@ -19,4 +19,4 @@ spec:
         imagePullPolicy: Never
         env:
         - name: KAFKA_BOOTSTRAP_SERVERS
-          value: kafka:9092
+          value: 10.111.29.162:9092
