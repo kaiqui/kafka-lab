@@ -8,9 +8,22 @@ topicos:
 
 spring:
   kafka:
-    bootstrap-servers: kafka.default.svc.cluster.local:9092
+    bootstrap-servers: >-
+      kafka-controller-0.kafka-controller-headless.kafka.svc.cluster.local:9092,
+      kafka-controller-1.kafka-controller-headless.kafka.svc.cluster.local:9092,
+      kafka-controller-2.kafka-controller-headless.kafka.svc.cluster.local:9092
     consumer:
       group-id: pagamento-request-consumer-1
       auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
     properties:
-      security.protocol: PLAINTEXT  # Mantenha como SSL para ambientes produtivos
+      security.protocol: PLAINTEXT
+      # Configurações de resiliência
+      retries: 3
+      retry.backoff.ms: 1000
+      reconnect.backoff.ms: 1000
+      reconnect.backoff.max.ms: 10000
