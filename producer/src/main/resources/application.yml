@@ -5,3 +5,12 @@ topicos:
   pagamento:
     request:
       topic: "pagamento.request.topic.v1"
+
+spring:
+  kafka:
+    bootstrap-servers: kafka.default.svc.cluster.local:9092
+    consumer:
+      group-id: pagamento-request-consumer-1
+      auto-offset-reset: earliest
+    properties:
+      security.protocol: PLAINTEXT  # Mantenha como SSL para ambientes produtivos
