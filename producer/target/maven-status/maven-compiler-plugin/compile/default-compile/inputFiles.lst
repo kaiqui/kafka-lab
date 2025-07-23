@@ -1,1 +1,6 @@
-/Users/macbook/Documents/kafka-lab/app-lab/producer/src/main/java/com/example/producer/KafkaProducerApplication.java
+/Users/macbook/Documents/tutorial-spring-boot-kafka-parte-1-master/sb-kafka-producer/src/main/java/com/masterdev/sbkafkaproducer/config/KafkaProducerConfig.java
+/Users/macbook/Documents/tutorial-spring-boot-kafka-parte-1-master/sb-kafka-producer/src/main/java/com/masterdev/sbkafkaproducer/service/PagamentoService.java
+/Users/macbook/Documents/tutorial-spring-boot-kafka-parte-1-master/sb-kafka-producer/src/main/java/com/masterdev/sbkafkaproducer/dto/PagamentoDTO.java
+/Users/macbook/Documents/tutorial-spring-boot-kafka-parte-1-master/sb-kafka-producer/src/main/java/com/masterdev/sbkafkaproducer/producer/PagamentoRequestProducer.java
+/Users/macbook/Documents/tutorial-spring-boot-kafka-parte-1-master/sb-kafka-producer/src/main/java/com/masterdev/sbkafkaproducer/SbKafkaProducerApplication.java
+/Users/macbook/Documents/tutorial-spring-boot-kafka-parte-1-master/sb-kafka-producer/src/main/java/com/masterdev/sbkafkaproducer/api/PagamentoAPI.java

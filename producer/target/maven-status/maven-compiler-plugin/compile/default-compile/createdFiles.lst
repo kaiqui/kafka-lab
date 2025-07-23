@@ -1,1 +1,6 @@
-com/example/producer/KafkaProducerApplication.class
+com/masterdev/sbkafkaproducer/dto/PagamentoDTO.class
+com/masterdev/sbkafkaproducer/producer/PagamentoRequestProducer.class
+com/masterdev/sbkafkaproducer/config/KafkaProducerConfig.class
+com/masterdev/sbkafkaproducer/api/PagamentoAPI.class
+com/masterdev/sbkafkaproducer/service/PagamentoService.class
+com/masterdev/sbkafkaproducer/SbKafkaProducerApplication.class
